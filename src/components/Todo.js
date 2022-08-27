@@ -20,7 +20,9 @@ function Todo(props) {
           Delete
         </button>
       </div>
-      {modalIsOpen ? <Modal onCancel = {closeModalHandler} onConfirm = {closeModalHandler} /> : null}
+      {modalIsOpen ? (
+        <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />
+      ) : null}
       {modalIsOpen ? <Backdrop onCancel={closeModalHandler} /> : null}
     </div>
   );
